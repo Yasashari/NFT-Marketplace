@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFTMarketplace</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="nftmar_myprofile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="div1">
+      <a href="NFTMarketplace.html" target="_blank" id="a1">Marketplace</a>
+      <!-- <a href="mylistednfts.html" target="_blank">MYListedNfts</a> -->
+      <button onclick="connectmetamask()">Connect Wallet</button> <br /><br />
+    </div>
+    <div id="div2"></div>
+
+    <!-- <img src="" alt="" id="img1" width="20%" height="200px" /><br /><br /> -->
+
+    <!-- <button onclick="check()">check</button><br /><br /> -->
+    <h4>Listing NFT</h4>
+    <label for="">Token Id: </label><input type="number" id="input1" /> <button onclick="approve()">Enable List</button> <br /><br />
+    <label for="">Listing Price(Eth): </label> <input type="number" id="input2" /> <button onclick="listing()">List</button> <br /><br />
+    <h4>Delisting NFT</h4>
+    <label for="">Token Id: </label><input type="number" id="input3" /> <button onclick="delisting()">Delist</button> <br /><br />
+
+    <!-- <button onclick="checkapprove()">checkapprove</button> -->
+    <!-- <button onclick="imageshow()">imageshow</button> <br /><br /><br /> -->
+    <!-- <button onclick="checkWallet_showNft()">checkwalletnft</button> -->
+    <script src="NFTMarketplace.js"></script>
+
+    <script>
+      // async function metadata() {
+      //   let metad1 = await fetch("https://ipfs.io/ipfs/QmXbytg8btknFrnGUnTpTQdtwQ786cBa7vPPYotxPGm1J8/1.json");
+
+      //   let metad2 = await metad1.json();
+
+      //   console.log(metad2.attributes[1].value);
+      // }
+
+      // metadata();
+    </script>
+  </body>
+</html>
